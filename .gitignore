@@ -1,3 +1,4 @@
 .vscode
 .vscode/*
 go.sum
+book.json
