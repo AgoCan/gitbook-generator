@@ -8,4 +8,4 @@ RUN cd /app && \
     gitbook build 
 
 FROM nginx
-COPY --from=builder /app/_book /var/www
+COPY --from=builder /app/_book /usr/share/nginx/html

@@ -17,11 +17,20 @@ var (
 	bookJsonContent string
 	//go:embed template/Dockerfile.tmpl
 	dockerfileContent string
+	//go:embed template/SUMMARY.md.tmpl
+	summaryContent string
+	//go:embed template/README.md.tmpl
+	readmeContent string
+	//go:embed template/website.css.tmpl
+	websiteContent string
 )
 
 var files = map[string]string{
-	"book.json":  bookJsonContent,
-	"Dockerfile": dockerfileContent,
+	"book.json":          bookJsonContent,
+	"Dockerfile":         dockerfileContent,
+	"SUMMARY.md":         summaryContent,
+	"README.md":          summaryContent,
+	"styles/website.css": websiteContent,
 }
 
 func main() {
