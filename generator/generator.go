@@ -9,16 +9,17 @@ import (
 // Option 参数保存
 type Option struct {
 	// AbsProjectPath 项目路径+项目名称
-	AbsProjectPath string
-	Plugins        []string
-	Title          string
-	SidebarLink    string
-	SidebarTitle   string
-	Author         string
-	Description    string
-	Keywords       string
-	GaToken        string
-	TreeBaToken    string
+	AbsProjectPath    string
+	Plugins           []string
+	Title             string
+	SidebarLink       string
+	SidebarTitle      string
+	Author            string
+	Description       string
+	Keywords          string
+	GaToken           string
+	TreeBaToken       string
+	NpmInstallPlugins []string
 }
 
 // GeneratorMgr 生成器管理
